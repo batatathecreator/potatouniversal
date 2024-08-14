@@ -224,3 +224,17 @@ hrsanims:Button("UnlimitedVoid", function()
 DiscordLib:Notification("Animation Playing", "Animating...", "Ok!")
 animate(anims.UnlimitedVoid)
 end)
+
+hrsanims:Button("WarpPortalDashComboStarter", function()
+DiscordLib:Notification("Animation Playing", "Animating...", "Ok!")
+animate(anims.WarpPortalDashComboStarter)
+end)
+
+local hrsanimsr = hrs:Channel("AnimationsCopy")
+
+hrsanimsr:Button("DetroitMove", function()
+DiscordLib:Notification("Animation Playing", "Animating...", "Ok!")
+animate(anims.Parent.AnimationsCopy.DetroitMove)
+end)
+
+hrsanimsr:Label("Im Skibidi Sigma Moai Face Dude")
