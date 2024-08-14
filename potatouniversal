@@ -1,0 +1,226 @@
+local DiscordLib = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/discord%20lib.txt")()
+local win = DiscordLib:Window("PotatoHub Universal")
+
+local plr = game.Players.LocalPlayer
+local chr = plr.Character
+local hum = chr:WaitForChild("Humanoid")
+
+function animate(anim)
+
+    local animp = hum:LoadAnimation(anim)
+
+    animp:Play()
+
+end
+
+local rs = game.ReplicatedStorage
+
+local anims = rs.Anims
+
+local hub = win:Server("Hub", "")
+
+local fcts = hub:Channel("Functions")
+
+fcts:Button("Reset Anims", function()
+
+    for i, v in hum:GetPlayingAnimationTracks() do
+
+        v:Stop()
+
+    end
+
+end)
+
+local hrs = win:Server("Heroes BattleGrounds", "")
+
+local hrsanims = hrs:Channel("Animations")
+
+hrsanims:Button("AsteroidHold", function()
+DiscordLib:Notification("Animation Playing", "Animating...", "Ok!")
+animate(anims.AsteroidHold)
+end)
+
+hrsanims:Button("BackDashEscape1", function()
+DiscordLib:Notification("Animation Playing", "Animating...", "Ok!")
+animate(anims.BackDashEscape1)
+end)
+
+hrsanims:Button("BackDashEscape2", function()
+DiscordLib:Notification("Animation Playing", "Animating...", "Ok!")
+animate(anims.BackDashEscape2)
+end)
+
+hrsanims:Button("BackDashEscape1HeroSlayer", function()
+DiscordLib:Notification("Animation Playing", "Animating...", "Ok!")
+animate(anims.BackDashEscape1HeroSlayer)
+end)
+
+hrsanims:Button("BackDashEscape2HeroSlayer", function()
+DiscordLib:Notification("Animation Playing", "Animating...", "Ok!")
+animate(anims.BackDashEscape2HeroSlayer)
+end)
+
+hrsanims:Button("Backwards", function()
+DiscordLib:Notification("Animation Playing", "Animating...", "Ok!")
+animate(anims.Backwards)
+end)
+
+hrsanims:Button("Blocking", function()
+DiscordLib:Notification("Animation Playing", "Animating...", "Ok!")
+animate(anims.Blocking)
+end)
+
+hrsanims:Button("BlockingHeroSlayer", function()
+DiscordLib:Notification("Animation Playing", "Animating...", "Ok!")
+animate(anims.BlockingHeroSlayer)
+end)
+
+hrsanims:Button("BlockingHeroSlayerMastered", function()
+DiscordLib:Notification("Animation Playing", "Animating...", "Ok!")
+animate(anims.BlockingHeroSlayerMastered)
+end)
+
+hrsanims:Button("BlueFlamesDashComboStarter", function()
+DiscordLib:Notification("Animation Playing", "Animating...", "Ok!")
+animate(anims.BlueFlamesDashComboStarter)
+end)
+
+hrsanims:Button("DecayingHatredDashComboStarter", function()
+DiscordLib:Notification("Animation Playing", "Animating...", "Ok!")
+animate(anims.DecayingHatredDashComboStarter)
+end)
+
+hrsanims:Button("EruptionDiveSlam", function()
+DiscordLib:Notification("Animation Playing", "Animating...", "Ok!")
+animate(anims.EruptionDiveSlam)
+end)
+
+hrsanims:Button("ExplosionHeroDashComboStarter", function()
+DiscordLib:Notification("Animation Playing", "Animating...", "Ok!")
+animate(anims.ExplosionHeroDashComboStarter)
+end)
+
+hrsanims:Button("Forward", function()
+DiscordLib:Notification("Animation Playing", "Animating...", "Ok!")
+animate(anims.Forward)
+end)
+
+hrsanims:Button("GreenHeroDashComboStarter", function()
+DiscordLib:Notification("Animation Playing", "Animating...", "Ok!")
+animate(anims.GreenHeroDashComboStarter)
+end)
+
+hrsanims:Button("HeroSlayerDashComboStarter", function()
+DiscordLib:Notification("Animation Playing", "Animating...", "Ok!")
+animate(anims.HeroSlayerDashComboStarter)
+end)
+
+hrsanims:Button("HeroSlayerDashComboStarterMastery", function()
+DiscordLib:Notification("Animation Playing", "Animating...", "Ok!")
+animate(anims.HeroSlayerDashComboStarterMastery)
+end)
+
+hrsanims:Button("HeroSlayerDashComboStarterNoSword", function()
+DiscordLib:Notification("Animation Playing", "Animating...", "Ok!")
+animate(anims.HeroSlayerDashComboStarterNoSword)
+end)
+
+hrsanims:Button("HeroSlayerDashComboStarterNoSwordBrassKnucles", function()
+DiscordLib:Notification("Animation Playing", "Animating...", "Ok!")
+animate(anims.HeroSlayerDashComboStarterNoSwordBrassKnucles)
+end)
+
+hrsanims:Button("Hurt0", function()
+DiscordLib:Notification("Animation Playing", "Animating...", "Ok!")
+animate(anims.Hurt0)
+end)
+
+hrsanims:Button("Hurt1", function()
+DiscordLib:Notification("Animation Playing", "Animating...", "Ok!")
+animate(anims.Hurt1)
+end)
+
+hrsanims:Button("Hurt1Client", function()
+DiscordLib:Notification("Animation Playing", "Animating...", "Ok!")
+animate(anims.Hurt1Client)
+end)
+
+hrsanims:Button("Hurt2", function()
+DiscordLib:Notification("Animation Playing", "Animating...", "Ok!")
+animate(anims.Hurt2)
+end)
+
+hrsanims:Button("Hurt2Client", function()
+DiscordLib:Notification("Animation Playing", "Animating...", "Ok!")
+animate(anims.Hurt2Client)
+end)
+
+hrsanims:Button("Hurt3", function()
+DiscordLib:Notification("Animation Playing", "Animating...", "Ok!")
+animate(anims.Hurt3)
+end)
+
+hrsanims:Button("Hurt3Client", function()
+DiscordLib:Notification("Animation Playing", "Animating...", "Ok!")
+animate(anims.Hurt3Client)
+end)
+
+hrsanims:Button("Hurt4", function()
+DiscordLib:Notification("Animation Playing", "Animating...", "Ok!")
+animate(anims.Hurt4)
+end)
+
+hrsanims:Button("Hurt4Client", function()
+DiscordLib:Notification("Animation Playing", "Animating...", "Ok!")
+animate(anims.Hurt4Client)
+end)
+
+hrsanims:Button("PortalArm", function()
+DiscordLib:Notification("Animation Playing", "Animating...", "Ok!")
+animate(anims.PortalArm)
+end)
+
+hrsanims:Button("PortalArmDiff", function()
+DiscordLib:Notification("Animation Playing", "Animating...", "Ok!")
+animate(anims.PortalArmDiff)
+end)
+
+hrsanims:Button("Right", function()
+DiscordLib:Notification("Animation Playing", "Animating...", "Ok!")
+animate(anims.Right)
+end)
+
+hrsanims:Button("Running", function()
+DiscordLib:Notification("Animation Playing", "Animating...", "Ok!")
+animate(anims.Running)
+end)
+
+hrsanims:Button("RunningDiff", function()
+DiscordLib:Notification("Animation Playing", "Animating...", "Ok!")
+animate(anims.RunningDiff)
+end)
+
+hrsanims:Button("RunningDiffMastery", function()
+DiscordLib:Notification("Animation Playing", "Animating...", "Ok!")
+animate(anims.RunningDiffMastery)
+end)
+
+hrsanims:Button("RunningDiffNoSwordMastery", function()
+DiscordLib:Notification("Animation Playing", "Animating...", "Ok!")
+animate(anims.RunningDiffNoSwordMastery)
+end)
+
+hrsanims:Button("SplitIceDashComboStarter", function()
+DiscordLib:Notification("Animation Playing", "Animating...", "Ok!")
+animate(anims.SplitIceDashComboStarter)
+end)
+
+hrsanims:Button("TheStrongestHeroDashComboStarter", function()
+DiscordLib:Notification("Animation Playing", "Animating...", "Ok!")
+animate(anims.TheStrongestHeroDashComboStarter)
+end)
+
+hrsanims:Button("UnlimitedVoid", function()
+DiscordLib:Notification("Animation Playing", "Animating...", "Ok!")
+animate(anims.UnlimitedVoid)
+end)
