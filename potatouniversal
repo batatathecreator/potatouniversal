@@ -215,9 +215,9 @@ DiscordLib:Notification("Animation Playing", "Animating...", "Ok!")
 animate(anims.SplitIceDashComboStarter)
 end)
 
-hrsanims:Button("TheStrongestHeroDashComboStarter", function()
+hrsanims:Button("TheStrongestDashComboStarter", function()
 DiscordLib:Notification("Animation Playing", "Animating...", "Ok!")
-animate(anims.TheStrongestHeroDashComboStarter)
+animate(anims.TheStrongestDashComboStarter)
 end)
 
 hrsanims:Button("UnlimitedVoid", function()
