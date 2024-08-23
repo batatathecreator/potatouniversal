@@ -1,0 +1,56 @@
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+local Window = Rayfield:CreateWindow({
+   Name = "Potato Hub Prison Life",
+   LoadingTitle = "loading assets",
+   LoadingSubtitle = "...",
+   ConfigurationSaving = {
+      Enabled = true,
+      FolderName = nil, -- Create a custom folder for your hub/game
+      FileName = "Big Hub"
+   },
+   Discord = {
+      Enabled = false,
+      Invite = "noinvitelink", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ABCD would be ABCD
+      RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+   },
+   KeySystem = false, -- Set this to true to use our key system
+   KeySettings = {
+      Title = "Untitled",
+      Subtitle = "Key System",
+      Note = "No method of obtaining the key is provided",
+      FileName = "Key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+      SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+      GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+      Key = {"Hello"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+   }
+})
+
+local Tab = Window:CreateTab("Main", 4483362458) -- Title, Image
+
+local prizzlife = Tab:CreateButton({
+   Name = "Prizz Life Hub",
+   Callback = function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/elliexmln/PrizzLife/main/pladmin.lua'))()
+   end,
+})
+
+local prisonware = Tab:CreateButton({
+   Name = "Prison Ware Hub",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/y10ko/Prisonware/main/Prisonware"))()
+   end,
+})
+
+function main()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/batatathecreator/oldpotatohub/main/potatohub.lua"))()
+end
+
+function dex()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/AlterX404/DarkDEX-V5/main/DarkDEX-V5"))()
+end
+
+local mainhub = Tab:CreateButton({Name = "MainHub", Callback = main,})
+
+local dexhub = Tab:CreateButton({Name = "Dex", Callback = dex,})
+
