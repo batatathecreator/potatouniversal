@@ -46,11 +46,11 @@ function main()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/batatathecreator/oldpotatohub/main/potatohub.lua"))()
 end
 
-function dex()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/AlterX404/DarkDEX-V5/main/DarkDEX-V5"))()
+function inf()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 end
 
 local mainhub = Tab:CreateButton({Name = "MainHub", Callback = main,})
 
-local dexhub = Tab:CreateButton({Name = "Dex", Callback = dex,})
+local dexhub = Tab:CreateButton({Name = "Infinite Yield", Callback = inf,})
 
