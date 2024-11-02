@@ -51,7 +51,7 @@ weirdofficephone:Play()
 })
 local itemtab = Window:CreateTab("Items", 4483362458)
 
-local test = Tab:CreateSection("Test Version")
+local test = itemtab:CreateSection("Test Version")
 
 local moonbtbt = itemtab:CreateButton({
    Name = "Moonlight Bottle",
