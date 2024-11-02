@@ -3,6 +3,10 @@ if pid == 6839171747 then
   loadstring(game:HttpGet("https://raw.githubusercontent.com/batatathecreator/potatouniversal/refs/heads/main/DoorsFunHub"))()
   return
 end
+if pid == 13076380114 then
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/batatathecreator/potatouniversal/refs/heads/main/heroesbg"))()
+  return
+end
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 local Window = Rayfield:CreateWindow({
    Name = "Sol's Universal",
@@ -36,14 +40,20 @@ local doors = maint:CreateButton({
      loadstring(game:HttpGet("https://raw.githubusercontent.com/batatathecreator/potatouniversal/refs/heads/main/DoorsFunHub"))()
    end,
 })
-local maint = Window:CreateTab("Main", 4483362458)
-local mkb = maint:CreateButton({
+local hbg = maint:CreateButton({
+   Name = "Force Heroes Battlegrounds",
+   Callback = function()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/batatathecreator/potatouniversal/refs/heads/main/heroesbg"))()
+   end,
+})
+local maint2 = Window:CreateTab("Main", 4483362458)
+local mkb = maint2:CreateButton({
    Name = "Mobile Keyboard",
    Callback = function()
      loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
    end,
 })
-local iy = maint:CreateButton({
+local iy = maint2:CreateButton({
    Name = "Infinite Yield",
    Callback = function()
      loadstring(game:HttpGet("https://raw.githubusercontent.com/edgeiy/infiniteyield/master/source"))()
