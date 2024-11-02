@@ -1,0 +1,394 @@
+local StarBottle = Instance.new("Tool")
+StarBottle.Name = "StarBottle"
+StarBottle.WorldPivot = CFrame.new(-0.39998626708984375, 1.2712244987487793, 11.499984741210938, 0, 0, 1, 0, 1, 0, -1, 0, 0)
+StarBottle.TextureId = "rbxassetid://16720158261"
+StarBottle.GripPos = Vector3.new(0.12800000607967377, -0.2529999911785126, 0.6039999723434448)
+StarBottle.Grip = CFrame.new(0.12800000607967377, -0.2529999911785126, 0.6039999723434448, -4.371138828673793e-08, 0, -1, 0, 1, 0, 1, 0, -4.371138828673793e-08)
+StarBottle.GripForward = Vector3.new(1, -0, 4.371138828673793e-08)
+StarBottle.ToolTip = "Vitamins"
+StarBottle.CanBeDropped = false
+StarBottle.GripRight = Vector3.new(-4.371138828673793e-08, 0, 1)
+
+local Handle = Instance.new("Part")
+Handle.Name = "Handle"
+Handle.CanCollide = false
+Handle.Transparency = 1
+Handle.CanQuery = false
+Handle.Color = Color3.fromRGB(255, 177, 67)
+Handle.Material = Enum.Material.Glass
+Handle.Size = Vector3.new(1.471955418586731, 2.3001954555511475, 0.8633245229721069)
+Handle.CanTouch = false
+Handle.CFrame = CFrame.new(-0.39998626708984375, 1.2712241411209106, 11.499984741210938, 0, 0, 0.9999951124191284, 0, 1, 0, -0.9999951124191284, 0, 0)
+Handle.CastShadow = false
+Handle.Parent = StarBottle
+
+local sound_open = Instance.new("Sound")
+sound_open.Name = "sound_open"
+sound_open.EmitterSize = 5
+sound_open.PlaybackSpeed = 0.293
+sound_open.RollOffMaxDistance = 25
+sound_open.MinDistance = 5
+sound_open.MaxDistance = 25
+sound_open.RollOffMinDistance = 5
+sound_open.Pitch = 0.293
+sound_open.SoundId = "rbxassetid://9121005566"
+sound_open.Parent = Handle
+
+local DistortionSoundEffect = Instance.new("DistortionSoundEffect")
+DistortionSoundEffect.Level = 0.43
+DistortionSoundEffect.Parent = sound_open
+
+local sound_flick = Instance.new("Sound")
+sound_flick.Name = "sound_flick"
+sound_flick.EmitterSize = 5
+sound_flick.RollOffMaxDistance = 25
+sound_flick.MinDistance = 5
+sound_flick.MaxDistance = 25
+sound_flick.RollOffMinDistance = 5
+sound_flick.SoundId = "rbxassetid://10370341073"
+sound_flick.Parent = Handle
+
+local DistortionSoundEffect1 = Instance.new("DistortionSoundEffect")
+DistortionSoundEffect1.Level = 0.43
+DistortionSoundEffect1.Parent = sound_flick
+
+local sound_close = Instance.new("Sound")
+sound_close.Name = "sound_close"
+sound_close.EmitterSize = 5
+sound_close.PlaybackSpeed = 0.246
+sound_close.RollOffMaxDistance = 25
+sound_close.MinDistance = 5
+sound_close.MaxDistance = 25
+sound_close.RollOffMinDistance = 5
+sound_close.Pitch = 0.246
+sound_close.SoundId = "rbxassetid://11405639640"
+sound_close.Parent = Handle
+
+local DistortionSoundEffect2 = Instance.new("DistortionSoundEffect")
+DistortionSoundEffect2.Level = 0.43
+DistortionSoundEffect2.Parent = sound_close
+
+local Bubbles = Instance.new("Decal")
+Bubbles.Name = "Bubbles"
+Bubbles.Face = Enum.NormalId.Back
+Bubbles.Transparency = 0.5
+Bubbles.Color3 = Color3.fromRGB(140, 64, 88)
+Bubbles.Texture = "rbxassetid://16694311767"
+Bubbles.Parent = Handle
+
+local Bubbles1 = Instance.new("Decal")
+Bubbles1.Name = "Bubbles"
+Bubbles1.Transparency = 0.5
+Bubbles1.Color3 = Color3.fromRGB(140, 64, 88)
+Bubbles1.Texture = "rbxassetid://16694311767"
+Bubbles1.Parent = Handle
+
+local Bubbles2 = Instance.new("Decal")
+Bubbles2.Name = "Bubbles"
+Bubbles2.Face = Enum.NormalId.Left
+Bubbles2.Transparency = 0.5
+Bubbles2.Color3 = Color3.fromRGB(140, 64, 88)
+Bubbles2.Texture = "rbxassetid://16694311767"
+Bubbles2.Parent = Handle
+
+local Bubbles3 = Instance.new("Decal")
+Bubbles3.Name = "Bubbles"
+Bubbles3.Face = Enum.NormalId.Right
+Bubbles3.Transparency = 0.5
+Bubbles3.Color3 = Color3.fromRGB(140, 64, 88)
+Bubbles3.Texture = "rbxassetid://16694311767"
+Bubbles3.Parent = Handle
+
+local Union = Instance.new("UnionOperation")
+Union.Anchored = true
+Union.Color = Color3.fromRGB(128, 187, 219)
+Union.Material = Enum.Material.Neon
+Union.Size = Vector3.new(0.08000018447637558, 0.8736576437950134, 0.6258925199508667)
+Union.CFrame = CFrame.new(-0.8064098358154297, 0.987675666809082, 11.525323867797852, 0.9963434338569641, 0, 0.08543919026851654, 0, 1, 0, -0.08543918281793594, 0, 0.9963434934616089)
+Union.UsePartColor = true
+Union.Parent = Handle
+
+local Emmiter = Instance.new("Part")
+Emmiter.Name = "Emmiter"
+Emmiter.Anchored = true
+Emmiter.BottomSurface = Enum.SurfaceType.Smooth
+Emmiter.Transparency = 1
+Emmiter.TopSurface = Enum.SurfaceType.Smooth
+Emmiter.Color = Color3.fromRGB(4, 175, 236)
+Emmiter.Size = Vector3.new(1, 2.628998279571533, 2.221203565597534)
+Emmiter.CFrame = CFrame.new(-0.5435357093811035, 2.323213577270508, 11.497444152832031, 0.9526597261428833, 0, -0.3040386140346527, 0, -1, 0, -0.3040386140346527, 0, -0.9526596665382385)
+Emmiter.Parent = Handle
+
+local ParticleEmitter = Instance.new("ParticleEmitter")
+ParticleEmitter.ShapeStyle = Enum.ParticleEmitterShapeStyle.Surface
+ParticleEmitter.LightInfluence = 0.2
+ParticleEmitter.Lifetime = NumberRange.new(2, 6)
+ParticleEmitter.SpreadAngle = Vector2.new(45, 45)
+ParticleEmitter.Transparency = NumberSequence.new({NumberSequenceKeypoint.new(0, 1), NumberSequenceKeypoint.new(0.199686, 1), NumberSequenceKeypoint.new(0.403302, 0.263473, 0.221557), NumberSequenceKeypoint.new(0.535377, 0.898204, 0.101796), NumberSequenceKeypoint.new(0.613208, 0.293413, 0.0892226), NumberSequenceKeypoint.new(0.705189, 0.898204, 0.0758029), NumberSequenceKeypoint.new(0.794025, 0.646707, 0.0553867), NumberSequenceKeypoint.new(0.859277, 0.952096, 0.0397431), NumberSequenceKeypoint.new(1, 1)})
+ParticleEmitter.LightEmission = 1
+ParticleEmitter.Color = ColorSequence.new(Color3.fromRGB(119, 232, 255))
+ParticleEmitter.Drag = 0.2
+ParticleEmitter.VelocitySpread = 45
+ParticleEmitter.Squash = NumberSequence.new({NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(0.111366, -0.253334), NumberSequenceKeypoint.new(0.2124, 0.253333), NumberSequenceKeypoint.new(0.281286, -0.493333), NumberSequenceKeypoint.new(0.409874, 0.44), NumberSequenceKeypoint.new(0.468427, -0.2), NumberSequenceKeypoint.new(0.575201, 0.28), NumberSequenceKeypoint.new(0.649828, -0.28), NumberSequenceKeypoint.new(0.718714, 0.573333), NumberSequenceKeypoint.new(0.803674, -0.36), NumberSequenceKeypoint.new(0.86682, 0.306667), NumberSequenceKeypoint.new(0.936854, -0.413333), NumberSequenceKeypoint.new(1, 0)})
+ParticleEmitter.Speed = NumberRange.new(0, 2)
+ParticleEmitter.Brightness = 2.7850001
+ParticleEmitter.Size = NumberSequence.new(0.2, 0.254777)
+ParticleEmitter.Acceleration = Vector3.new(0, 0.30000001192092896, 0)
+ParticleEmitter.Rate = 2
+ParticleEmitter.Texture = "rbxassetid://2581223252"
+ParticleEmitter.ShapePartial = 0.45
+ParticleEmitter.RotSpeed = NumberRange.new(-5, 5)
+ParticleEmitter.Rotation = NumberRange.new(-5, 5)
+ParticleEmitter.Parent = Emmiter
+
+local PointLight = Instance.new("PointLight")
+PointLight.Color = Color3.fromRGB(119, 232, 255)
+PointLight.Parent = Emmiter
+
+local Mesh = Instance.new("SpecialMesh")
+Mesh.Scale = Vector3.new(0.05258004367351532, 0.05258004739880562, 0.05258004367351532)
+Mesh.MeshId = "rbxassetid://16630434383"
+Mesh.MeshType = Enum.MeshType.FileMesh
+Mesh.Parent = Handle
+
+local Bottom = Instance.new("Part")
+Bottom.Name = "Bottom"
+Bottom.CanCollide = false
+Bottom.CanQuery = false
+Bottom.Color = Color3.fromRGB(136, 109, 93)
+Bottom.Material = Enum.Material.Sand
+Bottom.Size = Vector3.new(1.3144335746765137, 0.15303383767604828, 0.8569910526275635)
+Bottom.CanTouch = false
+Bottom.CFrame = CFrame.new(-0.39998626708984375, 0.07651615142822266, 11.499984741210938, 0, 0, 0.9999951124191284, 0, 1, 0, -0.9999951124191284, 0, 0)
+Bottom.CastShadow = false
+Bottom.Parent = Handle
+
+local Weld = Instance.new("ManualWeld")
+Weld.Name = "Weld"
+Weld.C1 = CFrame.new(0, -1.194707989692688, 0, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+Weld.C0 = CFrame.new(0, 0, 0, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+Weld.Parent = Bottom
+
+local Weld1 = Instance.new("Weld")
+Weld1.C1 = CFrame.new(-0.39998531341552734, 7.999999523162842, 11.499985694885254, 9.834766387939453e-07, 0.9999975562095642, 0, 0, 0, -1, -0.9999975562095642, 9.834766387939453e-07, 0)
+Weld1.C0 = CFrame.new(-9.5367431640625e-07, -0.07651698589324951, 9.5367431640625e-07, 0.9999975562095642, -9.834766387939453e-07, 0, 0, 0, -1, 9.834766387939453e-07, 0.9999975562095642, 0)
+Weld1.Parent = Bottom
+
+local Mesh1 = Instance.new("SpecialMesh")
+Mesh1.Scale = Vector3.new(0.05258004367351532, 0.05258004367351532, 0.05258003994822502)
+Mesh1.MeshId = "rbxassetid://16630434621"
+Mesh1.MeshType = Enum.MeshType.FileMesh
+Mesh1.Parent = Bottom
+
+local BottomLight = Instance.new("Part")
+BottomLight.Name = "BottomLight"
+BottomLight.CanCollide = false
+BottomLight.CanQuery = false
+BottomLight.Color = Color3.fromRGB(4, 175, 236)
+BottomLight.Material = Enum.Material.Neon
+BottomLight.Size = Vector3.new(1.3346679210662842, 0.02714495360851288, 0.8701834678649902)
+BottomLight.CanTouch = false
+BottomLight.CFrame = CFrame.new(-0.3998151123523712, 0.07711255550384521, 11.499717712402344, 0, 0, 0.9999951124191284, 0, 1, 0, -0.9999951124191284, 0, 0)
+BottomLight.CastShadow = false
+BottomLight.Parent = Handle
+
+local Weld2 = Instance.new("ManualWeld")
+Weld2.Name = "Weld"
+Weld2.C1 = CFrame.new(0.000267436116700992, -1.1941115856170654, 0.00017115911759901792, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+Weld2.C0 = CFrame.new(0, 0, 0, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+Weld2.Parent = BottomLight
+
+local Mesh2 = Instance.new("SpecialMesh")
+Mesh2.Scale = Vector3.new(0.05338945984840393, 0.00932658277451992, 0.053389452397823334)
+Mesh2.MeshId = "rbxassetid://16630434621"
+Mesh2.MeshType = Enum.MeshType.FileMesh
+Mesh2.Parent = BottomLight
+
+local Cork = Instance.new("Part")
+Cork.Name = "Cork"
+Cork.CanCollide = false
+Cork.CanQuery = false
+Cork.Color = Color3.fromRGB(136, 109, 93)
+Cork.Material = Enum.Material.Sand
+Cork.Size = Vector3.new(0.5083499550819397, 0.38216063380241394, 0.5083499550819397)
+Cork.CanTouch = false
+Cork.CFrame = CFrame.new(-0.39998626708984375, 2.437918186187744, 11.499984741210938, 0, 0, 0.9999951124191284, 0, 1, 0, -0.9999951124191284, 0, 0)
+Cork.CastShadow = false
+Cork.Parent = Handle
+
+local Weld3 = Instance.new("ManualWeld")
+Weld3.Name = "Weld"
+Weld3.C1 = CFrame.new(0, 1.1666940450668335, 0, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+Weld3.C0 = CFrame.new(0, 0, 0, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+Weld3.Parent = Cork
+
+local Mesh3 = Instance.new("SpecialMesh")
+Mesh3.Scale = Vector3.new(0.05258004739880562, 0.05258003622293472, 0.05258004739880562)
+Mesh3.MeshId = "rbxassetid://16630434772"
+Mesh3.MeshType = Enum.MeshType.FileMesh
+Mesh3.Parent = Cork
+
+local CorkLight = Instance.new("Part")
+CorkLight.Name = "CorkLight"
+CorkLight.CanCollide = false
+CorkLight.CanQuery = false
+CorkLight.Color = Color3.fromRGB(4, 175, 236)
+CorkLight.Material = Enum.Material.Neon
+CorkLight.Size = Vector3.new(0.5089752078056335, 0.09814947843551636, 0.5089752078056335)
+CorkLight.CanTouch = false
+CorkLight.CFrame = CFrame.new(-0.4003285765647888, 2.4741384983062744, 11.499995231628418, 0, 0, 0.9999951124191284, 0, 1, 0, -0.9999951124191284, 0, 0)
+CorkLight.CastShadow = false
+CorkLight.Parent = Handle
+
+local Weld4 = Instance.new("ManualWeld")
+Weld4.Name = "Weld"
+Weld4.C1 = CFrame.new(-0.00001069744484993862, 1.2029143571853638, -0.00034231823519803584, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+Weld4.C0 = CFrame.new(0, 0, 0, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+Weld4.Parent = CorkLight
+
+local Mesh4 = Instance.new("SpecialMesh")
+Mesh4.Scale = Vector3.new(0.05264471843838692, 0.01350401621311903, 0.05264471843838692)
+Mesh4.MeshId = "rbxassetid://16630434772"
+Mesh4.MeshType = Enum.MeshType.FileMesh
+Mesh4.Parent = CorkLight
+
+local GlassDirt = Instance.new("Part")
+GlassDirt.Name = "GlassDirt"
+GlassDirt.CanCollide = false
+GlassDirt.Transparency = 0.6
+GlassDirt.CanQuery = false
+GlassDirt.Color = Color3.fromRGB(116, 103, 85)
+GlassDirt.Material = Enum.Material.Sandstone
+GlassDirt.Size = Vector3.new(1.4866749048233032, 2.323197364807129, 0.8719577193260193)
+GlassDirt.CanTouch = false
+GlassDirt.CFrame = CFrame.new(-0.39998626708984375, 1.2712241411209106, 11.499984741210938, 0, 0, 0.9999951124191284, 0, 1, 0, -0.9999951124191284, 0, 0)
+GlassDirt.CastShadow = false
+GlassDirt.Parent = Handle
+
+local Weld5 = Instance.new("ManualWeld")
+Weld5.Name = "Weld"
+Weld5.C1 = CFrame.new(0, 0, 0, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+Weld5.C0 = CFrame.new(0, 0, 0, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+Weld5.Parent = GlassDirt
+
+local Mesh5 = Instance.new("SpecialMesh")
+Mesh5.Scale = Vector3.new(0.05310584232211113, 0.05310584604740143, 0.05310584232211113)
+Mesh5.MeshId = "rbxassetid://16630434383"
+Mesh5.MeshType = Enum.MeshType.FileMesh
+Mesh5.Parent = GlassDirt
+
+local Liquid = Instance.new("Part")
+Liquid.Name = "Liquid"
+Liquid.CanCollide = false
+Liquid.CanQuery = false
+Liquid.Color = Color3.fromRGB(4, 175, 236)
+Liquid.Material = Enum.Material.Neon
+Liquid.Size = Vector3.new(1.3182551860809326, 1.4796828031539917, 0.7719701528549194)
+Liquid.CanTouch = false
+Liquid.CFrame = CFrame.new(-0.39998626708984375, 0.9193651676177979, 11.503150939941406, 0, 0, 0.9999951124191284, 0, 1, 0, -0.9999951124191284, 0, 0)
+Liquid.CastShadow = false
+Liquid.Parent = Handle
+
+local GradientBottom = Instance.new("Decal")
+GradientBottom.Name = "GradientBottom"
+GradientBottom.Face = Enum.NormalId.Bottom
+GradientBottom.Transparency = 0.2
+GradientBottom.Color3 = Color3.fromRGB(4, 175, 236)
+GradientBottom.Texture = "http://www.roblox.com/asset/?id=13993227947"
+GradientBottom.Parent = Liquid
+
+local Gradient2 = Instance.new("Decal")
+Gradient2.Name = "Gradient2"
+Gradient2.Face = Enum.NormalId.Left
+Gradient2.Transparency = 0.4
+Gradient2.Color3 = Color3.fromRGB(4, 175, 236)
+Gradient2.Texture = "rbxassetid://16631634641"
+Gradient2.Parent = Liquid
+
+local Gradient21 = Instance.new("Decal")
+Gradient21.Name = "Gradient2"
+Gradient21.Face = Enum.NormalId.Right
+Gradient21.Transparency = 0.4
+Gradient21.Color3 = Color3.fromRGB(4, 175, 236)
+Gradient21.Texture = "rbxassetid://16631634641"
+Gradient21.Parent = Liquid
+
+local Gradient22 = Instance.new("Decal")
+Gradient22.Name = "Gradient2"
+Gradient22.Face = Enum.NormalId.Back
+Gradient22.Transparency = 0.4
+Gradient22.Color3 = Color3.fromRGB(4, 175, 236)
+Gradient22.Texture = "rbxassetid://16631634641"
+Gradient22.Parent = Liquid
+
+local Gradient23 = Instance.new("Decal")
+Gradient23.Name = "Gradient2"
+Gradient23.Transparency = 0.4
+Gradient23.Color3 = Color3.fromRGB(4, 175, 236)
+Gradient23.Texture = "rbxassetid://16631634641"
+Gradient23.Parent = Liquid
+
+local Weld6 = Instance.new("ManualWeld")
+Weld6.Name = "Weld"
+Weld6.C1 = CFrame.new(-0.003166443668305874, -0.3518590033054352, 0, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+Weld6.C0 = CFrame.new(0, 0, 0, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+Weld6.Parent = Liquid
+
+local Mesh6 = Instance.new("SpecialMesh")
+Mesh6.Scale = Vector3.new(0.05258003994822502, 0.07695157825946808, 0.05258003994822502)
+Mesh6.MeshId = "rbxassetid://16630434846"
+Mesh6.MeshType = Enum.MeshType.FileMesh
+Mesh6.Parent = Liquid
+
+Weld.Part1 = StarBottle.Handle
+Weld.Part0 = Handle.Bottom
+
+Weld2.Part1 = StarBottle.Handle
+Weld2.Part0 = Handle.BottomLight
+
+Weld3.Part1 = StarBottle.Handle
+Weld3.Part0 = Handle.Cork
+
+Weld4.Part1 = StarBottle.Handle
+Weld4.Part0 = Handle.CorkLight
+
+Weld5.Part1 = StarBottle.Handle
+Weld5.Part0 = Handle.GlassDirt
+
+Weld6.Part1 = StarBottle.Handle
+Weld6.Part0 = Handle.Liquid
+
+StarBottle.Parent = game.Players.LocalPlayer.Backpack
+
+local anim = Instance.new("Animation")
+anim.AnimationId = "rbxassetid://10479585177"
+local animp = game.Players.LocalPlayer.Character:WaitForChild("Humanoid"):LoadAnimation(anim)
+
+StarBottle.Equipped:Connect(function()
+
+	animp:Play()
+
+end)
+
+StarBottle.Unequipped:Connect(function()
+
+	animp:Stop()
+
+end)
+
+StarBottle.Activated:Connect(function()
+
+	animp:Stop()
+	local hum = game.Players.LocalPlayer.Character:WaitForChild("Humanoid")
+	local anim2 = Instance.new("Animation")
+	anim2.AnimationId = "rbxassetid://10482563149"
+	local anim2p = hum:LoadAnimation(anim2)
+	anim2p:Play()
+	sound_close:Play()
+	task.wait(.5)
+	hum.WalkSpeed = 20
+	local lt = game.Lighting
+	lt.Brightness = 2
+	lt.GlobalShadows = false
+
+end)
