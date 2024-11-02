@@ -43,6 +43,7 @@ local doors = maint:CreateButton({
 local hbg = maint:CreateButton({
    Name = "Force Heroes Battlegrounds",
    Callback = function()
+      Rayfield:Destroy()
      loadstring(game:HttpGet("https://raw.githubusercontent.com/batatathecreator/potatouniversal/refs/heads/main/heroesbg"))()
    end,
 })
