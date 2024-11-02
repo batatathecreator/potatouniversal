@@ -1,5 +1,5 @@
 local DiscordLib = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/discord%20lib.txt")()
-local win = DiscordLib:Window("PotatoHub Universal")
+local win = DiscordLib:Window("Sol's Heroes Bg")
 
 local plr = game.Players.LocalPlayer
 local chr = plr.Character
