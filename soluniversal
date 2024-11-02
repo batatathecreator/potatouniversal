@@ -1,0 +1,5 @@
+local pid = game.PlaceId
+if pid == 6839171747 then
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/batatathecreator/potatouniversal/refs/heads/main/DoorsFunHub"))()
+  return
+end
