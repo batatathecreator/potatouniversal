@@ -25,15 +25,15 @@ local Window = Rayfield:CreateWindow({
       Invite = "noinvitelink",
       RememberJoins = true
    },
-   KeySystem = false,
+   KeySystem = true,
    KeySettings = {
-      Title = "Untitled",
-      Subtitle = "Key System",
-      Note = "No method of obtaining the key is provided",
+      Title = "Anti-Bot",
+      Subtitle = "Key: potato",
+      Note = "No bot allowed! -Sol_cheio",
       FileName = "Key",
-      SaveKey = true,
+      SaveKey = false,
       GrabKeyFromSite = false,
-      Key = {"Hello"}
+      Key = {"potato"}
    }
 })
 local maint = Window:CreateTab("Forces", 4483362458)
