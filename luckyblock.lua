@@ -45,6 +45,7 @@ local maintab = Window:CreateTab("Main", 4483362458)
 local backbt = maintab:CreateButton({
    Name = "Go Back To Potato Universal Hub",
    Callback = function()
+         Rayfield:Destroy()
      loadstring(game:HttpGet("https://raw.githubusercontent.com/batatathecreator/potatouniversal/refs/heads/main/soluniversal"))()
    end,
 })
