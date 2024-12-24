@@ -11,10 +11,6 @@ if pid == 662417684 then
   loadstring(game:HttpGet("https://raw.githubusercontent.com/batatathecreator/potatouniversal/refs/heads/main/luckyblock.lua"))()
   return
 end
-if pid == 4924922222 then
-  loadstring(game:HttpGet('https://raw.githubusercontent.com/sXPiterXs1111/Sanderxv3.30/main/sanderx3.30'))()
-  return
-end
 
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 local Window = Rayfield:CreateWindow({
@@ -42,6 +38,19 @@ local Window = Rayfield:CreateWindow({
       Key = {"potato"}
    }
 })
+
+Rayfield:Notify({
+    Title = "Brookhaven 🏡RP",
+    Content = "Compatibiliy Set",
+    Duration = 6.5,
+    Image = 4483362458,
+})
+
+if pid == 4924922222 then
+  loadstring(game:HttpGet('https://raw.githubusercontent.com/sXPiterXs1111/Sanderxv3.30/main/sanderx3.30'))()
+  return
+end
+
 local maint = Window:CreateTab("Forces", 4483362458)
 local doors = maint:CreateButton({
    Name = "Force Doors Hub",
