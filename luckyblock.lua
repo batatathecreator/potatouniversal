@@ -59,6 +59,13 @@ local normalbt = luckytab:CreateButton({
    end,
 })
 
+local rainbowbt = luckytab:CreateButton({
+   Name = "Rainbow Lucky Block",
+   Callback = function()
+     game:GetService("ReplicatedStorage").SpawnRainbowBlock:FireServer()
+   end,
+})
+
 local superbt = luckytab:CreateButton({
    Name = "Super Lucky Block",
    Callback = function()
