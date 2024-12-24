@@ -41,6 +41,7 @@ local maint = Window:CreateTab("Forces", 4483362458)
 local doors = maint:CreateButton({
    Name = "Force Doors Hub",
    Callback = function()
+      Rayfield:Destroy()
      loadstring(game:HttpGet("https://raw.githubusercontent.com/batatathecreator/potatouniversal/refs/heads/main/DoorsFunHub"))()
    end,
 })
