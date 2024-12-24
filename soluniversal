@@ -7,6 +7,9 @@ if pid == 13076380114 then
   loadstring(game:HttpGet("https://raw.githubusercontent.com/batatathecreator/potatouniversal/refs/heads/main/heroesbg"))()
   return
 end
+if pid == 662417684 then
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/batatathecreator/potatouniversal/refs/head/main/luckyblock.lua"))()
+end
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 local Window = Rayfield:CreateWindow({
    Name = "Potato Universal Hub",
@@ -45,6 +48,13 @@ local hbg = maint:CreateButton({
    Callback = function()
       Rayfield:Destroy()
      loadstring(game:HttpGet("https://raw.githubusercontent.com/batatathecreator/potatouniversal/refs/heads/main/heroesbg"))()
+   end,
+})
+local lb = maint:CreateButton({
+   Name = "Force ❓ LUCKY BLOCKS Battlegrounds",
+   Callback = function()
+      Rayfield:Destroy()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/batatathecreator/potatouniversal/refs/head/main/luckyblock.lua"))()
    end,
 })
 local maint2 = Window:CreateTab("Main", 4483362458)
