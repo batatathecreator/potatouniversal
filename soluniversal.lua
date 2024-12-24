@@ -9,6 +9,7 @@ if pid == 13076380114 then
 end
 if pid == 662417684 then
   loadstring(game:HttpGet("https://raw.githubusercontent.com/batatathecreator/potatouniversal/refs/heads/main/luckyblock.lua"))()
+  return
 end
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 local Window = Rayfield:CreateWindow({
